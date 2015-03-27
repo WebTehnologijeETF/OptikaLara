@@ -5,7 +5,6 @@ body {
 #glavni {
     background-color: white;
     width: 1000px;
-    height: 1000px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0px;
@@ -15,16 +14,23 @@ body {
 #gornji {
     background-image: url("https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xpf1/v/t34.0-12/11039933_10203618351326507_736101450_n.jpg?oh=f0cc3d34089a7fb0fdf30e4fe80fbc84&oe=5515B6C1&__gda__=1427493045_1bad467df8db90faf756b5c378b57ba9");
     width: 1000px;
-    height: 300px;
-    background-size: 1000px 300px;
+    height: 360px;
+    background-size: 1000px 360px;
     margin-top: 0px;
     padding-top: 0px;
 }
 
 #lijevi {
     width: 200px;
-    height: 675px;
     margin-top: 25px;
+}
+
+#desni {
+    width: 745px;
+    margin-left: 250px;
+    margin-top: -260px;
+    border: 2px solid green;
+    box-shadow: 0px 0px 10px green;
 }
 
 #lijevi ul li{
@@ -59,7 +65,7 @@ body {
 }
 
 #gornji p{
-    padding-top: 10px;
+    padding-top: 50px;
     padding-left: 15px;
     font-size: 90px;
     margin-top: 0px;
@@ -67,3 +73,65 @@ body {
     font-family: 'Kaushan Script', cursive;
 }
 
+h3{
+    padding-left: 300px;
+    padding-top: 40px;
+}
+
+#novost1 p{
+    width: 400px;
+    float: right;
+    text-align: justify;
+    padding-right: 45px;
+}
+
+.novost1_slika{
+    margin-left: 30px;
+    margin-bottom: 30px;
+    margin-top: -50px;
+    width: 250px;
+    height: 250px;
+}
+
+.datum1{
+     margin-left: 100px;
+     font-size: x-small;
+     color: #808080;
+}
+
+#novost2 p{
+    width: 400px;
+    float: right;
+    text-align: justify;
+    padding-right: 45px;
+}
+
+.novost2_slika{
+    margin-left: 30px;
+    margin-bottom: 30px;
+    margin-top: -50px;
+    width: 250px;
+    height: 250px;
+}
+
+.datum2{
+     margin-left: 100px;
+     font-size: x-small;
+     color: #808080;
+}
+
+
+
+#copyright{
+     height: 20px;
+     width: 1000px;
+     margin-top: 20px;
+     margin-bottom: 0px;
+}
+
+#copyright p{
+     font-size: small;
+     border: 2px solid green;
+     box-shadow: 0px 0px 10px green;
+     text-align: center;
+}
