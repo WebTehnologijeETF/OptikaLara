@@ -175,10 +175,34 @@ h3{
 }
 
 #desni ul li{
-
+    list-style-image: url();
 }
 
 #desni ul li a{
      text-decoration: none;
-     font-size: 30px;
+     font-size: 20px;
+     text-align: center;
+}
+
+.slika1{
+    background-image: url(http://www.jpeg-optimizer.com/uploaded_images_final/brokenglasses__1427565656_77.239.16.51.jpg);
+    height: 165px;
+    width: 220px;
+    margin-top: -700px;
+    margin-left: 10px;
+}
+
+.slika2{
+    background-image: url(http://www.jpeg-optimizer.com/uploaded_images_final/OPTIKA__1427565697_77.239.16.51.jpg);
+    height: 200px;
+    width: 220px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.lijevi_slike{
+    width: 245px;
+    height: 450px;
+    margin-top: 250px;
+    margin-left: 0px;
 }
