@@ -13,7 +13,7 @@ body {
 }
 
 #gornji {
-    background-image: url("https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xpf1/v/t34.0-12/11039933_10203618351326507_736101450_n.jpg?oh=f0cc3d34089a7fb0fdf30e4fe80fbc84&oe=5515B6C1&__gda__=1427493045_1bad467df8db90faf756b5c378b57ba9");
+    background-image: url("https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xpf1/v/t34.0-12/11080152_10155395259450323_2079441846_n.jpg?oh=81d3797520019c7446f636b4ebefbdd4&oe=5518AAD1&__gda__=1427733824_13695099921011d5122e0b541c3bad34");
     width: 1000px;
     height: 360px;
     background-size: 1000px 360px;
@@ -139,25 +139,30 @@ h3{
      font-size: 50px;
 }
 
-#tabela{
+.tabela1{
      text-align: left;
      padding-left: 100px;
      padding-top: 70px;
-     padding-bottom: 100px;
+     padding-bottom: 50px;
      padding-right: 100px;
      border-color: green;
      border-spacing: 0px;
+     width: 100%;
+     
 }
 
-#cjenovnik{
+.cjenovnik{
      background-color: #c9f3c3;
      text-align: center;
      height: 10px;
+     border: 1px solid green;
 }
 
-#sredina{
+.sredina{
      text-align: center;
      font-weight: bold;
+     background-color: #eeecec;
+     border: 1px solid green;
 }
 
 #onama_slika{
@@ -175,34 +180,94 @@ h3{
 }
 
 #desni ul li{
-    list-style-image: url();
+    list-style-image: url(https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xpf1/v/t34.0-12/11015894_10205260459883329_73680129_n.jpg?oh=3643c078b9884f60b54ad40bec0ebdad&oe=5519C611&__gda__=1427674753_d8731ad78a133965585f84511ba6442c);
 }
 
 #desni ul li a{
      text-decoration: none;
-     font-size: 20px;
-     text-align: center;
+     font-size: 17px;
 }
 
 .slika1{
     background-image: url(http://www.jpeg-optimizer.com/uploaded_images_final/brokenglasses__1427565656_77.239.16.51.jpg);
     height: 165px;
     width: 220px;
-    margin-top: -700px;
-    margin-left: 10px;
 }
 
 .slika2{
     background-image: url(http://www.jpeg-optimizer.com/uploaded_images_final/OPTIKA__1427565697_77.239.16.51.jpg);
     height: 200px;
     width: 220px;
-    margin-top: 20px;
-    margin-left: 10px;
 }
 
-.lijevi_slike{
+#lijevi_slike{
     width: 245px;
-    height: 450px;
-    margin-top: 250px;
-    margin-left: 0px;
+    height: 500px;
+    margin-top: 0px;
+    background-color: red;
 }
+
+.tekstT{
+    padding-left: 395px;
+}
+
+.nazivi{
+    text-align: left;
+    background-color: #eeecec;
+    border: 1px solid green;
+}
+
+.cijene{
+    text-align: left;
+    border: 1px solid green;
+}
+
+.tekst{
+    margin-left: 20px;
+    margin-top: 40px;
+    width: 730px;
+}
+
+#stakla ul li{
+    list-style-image: url(https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xpt1/v/t34.0-12/11079047_10205260504164436_958409188_n.jpg?oh=5a173e53af6c7cad49f5ee6f9771ad04&oe=5519D060&__gda__=1427759307_3ee07766a217b757d27ebd3c70547c0e);
+}
+
+#stakla ul li a{
+    text-decoration: none;
+}
+
+#logo{
+    height: 1000px;
+    width: 170px;
+    float: right;
+    margin-right: 60px;
+}
+
+#logo1{
+    height: 650px;
+    width: 60px;
+    float: right;
+    margin-right: 160px;
+}
+
+
+.logoS{
+    height: 150px;
+    width: 150px;
+}
+
+#naslovi{
+    text-align: center;
+    text-shadow: 2px 2px green;
+}
+
+#slikaOnama{
+    height: 450px;
+    width: 600px;
+    margin-left: 75px;
+    margin-bottom: 30px;
+}
+
+
+
+
