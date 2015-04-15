@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="stil.css">
         <link rel="shortcut icon" type="image/x-icon" href="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0oED0lGCiDSxwvcTpJMLEDedS6W8n_QUHA6MuB4vLZlBgAxS_MczSYUY" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script src="ValidacijaForme.js"></script>
     </head>
     <body>
         <div id="glavni">
@@ -28,28 +29,36 @@
                     <h2>KONTAKT</h2>
                     <p id="tekstK">Adresa: M.S.Serdarevića 7, Zenica, BiH <br> Telefon: 032/402-557</p>
                     <h2>KONTAKT FORMA</h2> <br>
+                    <form name="formica" onsubmit="return validacija()">
                     <label class="kontakt">*Ime i prezime: </label>
-                    <input type="text" name="ime" class="kontakt1"><br><br>
+                    <input type="text" class="kontakt1" id="ime">
+                        <img id="ime-warning" src="http://icons.iconarchive.com/icons/danrabbit/elementary/128/Button-warning-icon.png" alt="ime_prezime" onmouseover ="return prikaziTekstIme()" onmouseout="return sakrijTekstIme()"> <div id="ime-tekst">Morate unijeti ime i prezime!</div> <br><br>
                     <label class="kontakt">Datum rođenja: </label>
                     <input type="date" name="datum" class="kontakt1"><br><br>
-                    <label class="kontakt">*E-mail: </label>
-                    <input type="email" name="mail" class="kontakt1"><br><br>
+                    <label class="kontakt">E-mail: </label>
+                    <input type="email" name="mail" class="kontakt1" id="email">
+                        <img id="email-warning" src="http://icons.iconarchive.com/icons/danrabbit/elementary/128/Button-warning-icon.png" alt="email" onmouseover ="return prikaziTekstEmail()" onmouseout="return sakrijTekstEmail()"> <div id="email-tekst">Morate unijeti validan e-mail (primjer@hotmail.com)!</div> <br><br>
                     <label class="kontakt">Razlog obraćanja: </label>
-                    <select name="razlog" class="kontakt1">
+                    <select name="razlog" class="kontakt1" id="razlog" onchange="reklamacija()">
                         <option value="pohvala">Pohvala</option>
                         <option value="reklamacija">Reklamacija</option>
                         <option value="kritika">Kritika</option>
+                        <option value="drugo">Drugo</option>
                     </select> <br><br>
+                        <label class="kontakt" id="label_artikal">*Artikal: </label> 
+                    <input type="text" id="artikal" class="kontakt1">
+                        <img id="artikal-warning" src="http://icons.iconarchive.com/icons/danrabbit/elementary/128/Button-warning-icon.png" alt="reklamacija" onmouseover ="return prikaziTekstReklamacija()" onmouseout="return sakrijTekstReklamacija()"> <div id="artikal-tekst">Morate unijeti artikal koji reklamirate!</div> <br><br>
                     <label class="kontakt">*Naslov: </label> 
-                    <input type="text" name="naslov" class="kontakt1"><br><br>
+                    <input type="text" id="naslov" class="kontakt1">
+                        <img id="naslov-warning" src="http://icons.iconarchive.com/icons/danrabbit/elementary/128/Button-warning-icon.png" alt="naslov" onmouseover ="return prikaziTekstNaslov()" onmouseout="return sakrijTekstNaslov()"> <div id="naslov-tekst">Morate unijeti naslov poruke!</div> <br><br>
                     <label class="kontakt">*Poruka: </label> <br>
-                    <textarea rows="10" cols="50" id="poruka"> </textarea> <br><br>
-                    <input type="button" name="OK" value="Potvrdi" id="potvrdi">
+                    <textarea rows="10" cols="50" id="poruka"></textarea>
+                        <img id="poruka-warning" src="http://icons.iconarchive.com/icons/danrabbit/elementary/128/Button-warning-icon.png" alt="poruka" onmouseover ="return prikaziTekstPoruka()" onmouseout="return sakrijTekstPoruka()"> <div id="poruka-tekst">Morate unijeti sadržaj poruke!</div>  <br><br>
+                    <input type="submit" name="OK" value="Potvrdi" id="potvrdi">
                     <input type="button" name="NOK" value="Poništi" id="ponisti"><br><br><br><br><br><br>
                     <p id="tekstic">Sva polja označena sa * su obavezna za unos.<br><br><br></p>
-
+                        </form>
                     </div>
-
                 <div id="copyright">
                 <p>© Larisa Bešić | 2015 | Sva prava pridržana</p>
             </div>

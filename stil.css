@@ -13,7 +13,7 @@ body {
 }
 
 #gornji {
-    background-image: url("https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xpf1/v/t34.0-12/11080152_10155395259450323_2079441846_n.jpg?oh=81d3797520019c7446f636b4ebefbdd4&oe=5518AAD1&__gda__=1427733824_13695099921011d5122e0b541c3bad34");
+    background-image: url("slike/naslovna.jpg");
     width: 1000px;
     height: 360px;
     background-size: 1000px 360px;
@@ -189,13 +189,13 @@ h3{
 }
 
 #slika1{
-    background-image: url(http://www.jpeg-optimizer.com/uploaded_images_final/brokenglasses__1427565656_77.239.16.51.jpg);
+    background-image: url(slike/popravke.jpg);
     height: 165px;
     width: 220px;
 }
 
 #slika2{
-    background-image: url(http://www.jpeg-optimizer.com/uploaded_images_final/OPTIKA__1427565697_77.239.16.51.jpg);
+    background-image: url(slike/pregled.jpg);
     height: 200px;
     width: 220px;
     margin-top: 30px;
@@ -285,9 +285,15 @@ label{
     width: 150px;
     margin-left: 40px;
 }
+
 desni.kontakt1{
   display: inline-block;
   float: left;
+}
+
+.kontakt1{
+  width: 200px;
+  height: 17px;
 }
 
 #poruka{
@@ -307,5 +313,61 @@ desni.kontakt1{
   margin-top: -50px;
 }
 
+#ime-warning, #naslov-warning, #poruka-warning, #email-warning, #artikal-warning{
+  visibility: hidden;
+  width: 20px;
+  height: 20px;
+}
 
+#ime-tekst{
+  visibility: hidden;
+  font-weight: bold;
+  color: red;
+  float: right;
+  margin-left: auto;
+  font-size: small;
+  margin-right: 150px;
+}
 
+#naslov-tekst{
+  visibility: hidden;
+  font-weight: bold;
+  color: red;
+  float: right;
+  margin-left: auto;
+  font-size: small;
+  margin-right: 145px;
+}
+
+#poruka-tekst{
+  visibility: hidden;
+  font-weight: bold;
+  color: red;
+  float: right;
+  margin-left: auto;
+  font-size: 10px;
+  margin-top: 143px;
+}
+
+#email-tekst{
+  visibility: hidden;
+  font-weight: bold;
+  color: red;
+  float: right;
+  margin-left: auto;
+  font-size: small;
+}
+
+#artikal-tekst{
+  visibility: hidden;
+  font-weight: bold;
+  color: red;
+  float: right;
+  margin-left: auto;
+  font-size: small;
+  margin-right: 90px;
+}
+
+#artikal, #label_artikal{
+  visibility: hidden;
+}
