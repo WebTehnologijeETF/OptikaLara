@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="stil.css">
         <link rel="shortcut icon" type="image/x-icon" href="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0oED0lGCiDSxwvcTpJMLEDedS6W8n_QUHA6MuB4vLZlBgAxS_MczSYUY" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script src="Stablo.js"></script>
     </head>
     <body>
         <div id="glavni">
@@ -26,8 +27,8 @@
                 </div>
                 <div id="desni">
                     <h1 id="naslovi">PROIZVODI</h1>
-                    <p class="tekst"> U optici Lara možete pronaći samo najkvalitetnije sunčane i dioptrijske naočale, kao i sve vrste kontaktnih leća i stakala iz svijeta optike. <br><br> U ponudi sunčanih i dioptrijskih okvira se nalaze sljedeći svjetski brendovi:  </p>
-                    <div id="logo">
+                    <p class="tekst"> U optici Lara možete pronaći samo najkvalitetnije sunčane i dioptrijske naočale, kao i sve vrste kontaktnih leća i stakala iz svijeta optike. <br><br> </p>
+               <!--   <div id="logo">
                         <img src="http://www.fragrancex.com/images/products/brand/medium/Gucci.jpg" alt="gucci" class="logoS">
                     <img src="http://www.seeklogo.com/images/D/D_and_G-logo-83F77CB0ED-seeklogo.com.gif" alt="dg" class="logoS">
                     <img src="http://www.cooloptiek.be/userfiles/Dior.jpg" alt="dior" class="logoS">
@@ -67,8 +68,52 @@
                             <li><a href="http://www.grossoptic.rs/en/" target="_blank">Gross Optic</a> </li>
                             
                     </ul>
+                    </div>-->  
+
+                    <p id="suncane" onclick="return stabloSuncane()"> <img src="slike/ikonica_desno.png" alt="ikonica" id="ikonica1">Sunčane naočale</p>
+                    <div id="l1">
+                        <p onclick="return stabloRayBan()"><img src="slike/ikonica_desno.png" alt="ikonica" id="ikonica">Ray Ban 
+                        <p id="l11"><a href="http://www.ray-ban.com/international/products/sun?vw=grid&sbf=aviator" target="_blank" class="link">Kolekcija 2015</a> <br><br> <a href="http://www.ray-ban.com/international/products/sun?vw=grid&sbf=wayfarer" target="_blank" class="link">Kolekcija 2014</a></p>
+                        </p>
+                        <p onclick="return stabloVogue()"><img src="slike/ikonica_desno.png" alt="ikonica" id="ikonica3">Vogue
+                            <p id="l12"><a href="http://www.vogue-eyewear.com/international/sun-collection" target="_blank" class="link">NOVA kolekcija</a></p>
+                        </p>
+                        <p onclick="return stabloDG()"><img src="slike/ikonica_desno.png" alt="ikonica" id="ikonica4">Dolce&Gabbana
+                            <p id="l13"><a href="http://www.dolcegabbana.com/eyewear/special-collections/" target="_blank" class="link">Limitirana kolekcija</a></p>
+                        </p>
+                        <p onclick="return stabloDior()"><img src="slike/ikonica_desno.png" alt="ikonica" id="ikonica5">Dior
+                           <p id="l14"><a href="http://www.dior.com/couture/en_int/womens-fashion/accessories/eyewear?gclid=CjwKEAjw9bKpBRD-geiF8OHz4EcSJACO4O7T3R9j60RJYGVED9IpDq7A1_JhItNWIpx0MjGmI9pdmBoCvNnw_wcB" target="_blank" class="link">NOVA kolekcija</a></p>
+                        </p>
                     </div>
+                    <p id="dioptrijske" onclick="return stabloDioptrijske()"><img src="slike/ikonica_desno.png" alt="ikonica" id="ikonica2">Dioptrijski okviri</p>
+                    <div id="l2">
+                        <p onclick="return stabloCarrera()"><img src="slike/ikonica_desno.png" alt="ikonica" id="ikonica6">Carrera
+                            <p id="l21"><a href="http://www.carreraworld.com/opticals-shapes/squared/" target="_blank" class="link">Najprodavaniji muški modeli</a></p>
+                        </p>
+                        <p onclick="return stabloGucci()"><img src="slike/ikonica_desno.png" alt="ikonica" id="ikonica7">Gucci
+                           <p id="l22"><a href= "http://www.otticanet.com/en/eyeglasses/gucci/" target="_blank" class="link">Najprodavaniji ženski modeli</a></p>
+                        </p>
                     </div>
+
+                    <p id="dioptrijske" onclick="return stabloLece()"><img src="slike/ikonica_desno.png" alt="ikonica" id="ikonica8">Kontaktne leće i stakla</p>
+                    <div id="l3">
+                    <a href="http://www.essilor.com/en/Pages/Home.aspx" target="_blank" class="link">Essilor</a> <br> <br>
+                    <a href="http://www.bausch.com/" target="_blank" class="link">Bausch+Lomb</a> <br> <br>
+                    <a href="http://www.zeiss.com/corporate/en_de/global/home.html" target="_blank" class="link">Zeiss</a> <br> <br>
+                    <a href="http://www.rodenstock.com/com/en/index.html" target="_blank" class="link">Rodenstock</a> <br> <br>
+                    </div>
+
+                    <div id="slike">
+                    <img src="http://goodlogo.com/images/logos/ray-ban_logo_2535.gif" alt="rayban" class="logoS"> &nbsp; 
+                    <img src="http://www.galeriabaltycka.pl/assets/shop/MaxMara_(0)/logo_Max-Mara.jpg" alt="maxmara" class="logoS">
+                    <img src="http://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/0000/5102/brand.gif" alt="vogue" class="logoS"> &nbsp;
+                    <img src="http://www.fragrancex.com/images/products/brand/medium/Gucci.jpg" alt="gucci" class="logoS"> &nbsp; 
+                    <img src="http://www.seeklogo.com/images/D/D_and_G-logo-83F77CB0ED-seeklogo.com.gif" alt="dg" class="logoS"> &nbsp; 
+                    <img src="http://www.cooloptiek.be/userfiles/Dior.jpg" alt="dior" class="logoS"> &nbsp; 
+                    <img src="http://fotoviaggiando.com/wp-content/uploads/2014/03/carl-zeiss-logo.jpg" alt="zeiss" class="logoS"> &nbsp; 
+                    <img src="http://www.knowmore.org/wiki/images/2/2a/Bausch_%26_Lomb-logo.png" alt="b+l" class="logoS"> &nbsp; 
+                    </div>
+                 </div>
                  
             </div>
 
