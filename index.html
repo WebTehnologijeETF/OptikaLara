@@ -8,6 +8,9 @@
         <link rel="stylesheet" type="text/css" href="stil.css">
         <link rel="shortcut icon" type="image/x-icon" href="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0oED0lGCiDSxwvcTpJMLEDedS6W8n_QUHA6MuB4vLZlBgAxS_MczSYUY" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script src="AjaxSP.js"></script>
+        <script src="ValidacijaForme.js"></script>
+        <script src="Stablo.js"></script>
     </head>
     <body>
         <div id="glavni">
@@ -17,39 +20,25 @@
             
             <div id="lijevi">
                 <ul>
-                    <li><a href="index.html">Novosti</a></li>
-                    <li><a href="onama.html">O nama</a></li>
-                    <li><a href="cjenovnik.html">Cjenovnik</a></li>
-                    <li><a href="proizvodi.html">Proizvodi</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a onclick="otvori('naslovna.html')">Novosti</a></li> 
+                    <li><a onclick="otvori('onama.html')">O nama</a></li>
+                    <li><a onclick="otvori('cjenovnik.html')">Cjenovnik</a></li>
+                    <li><a onclick="otvori('proizvodi.html')">Proizvodi</a></li> 
+                    <li><a onclick="otvori('kontakt.html')">Kontakt</a></li> 
                 </ul>
  
                 <div id="desni">
-                    <h1 id="naslovi">NOVOSTI</h1>
-                    <div id="novost1">
-                        <h3>"1+1 GRATIS!"</h3>
-                         <p class="datum1"> Larisa B., 26.03.2015. </p>
-                        <img class="novost1_slika" src="http://www.optikastepinac.hr/slike_upload/20110606/velicina1/optika_stepinac201106060134090.jpg" alt="novost1_slika">
-                        <p> <br> Za sve naše kupce u periodu 27.03.2015-31.05.2015. organizovali smo veliku akciju pod nazivom "1+1 GRATIS!". Za svake kupljene sunčane, dobijate dioptrijske naočale GRATIS! <br> <br> <br> 
-                       <a href="#" title="vise"> Detaljnije... </a> 
-                             </p>
-                    </div>
-
-                    <div id="novost2">
-                        <h3>Promocija nove kolekcije Ray Ban</h3>
-                         <p class="datum2"> Larisa B., 21.03.2015. </p>
-                        <img class="novost2_slika" src="http://www.eyeexcellence.co.uk/wp-content/uploads/2014/12/RayBan_Logo.gif" alt="novost2_slika">
-                        <p> Prisustvovali smo promociji, koja je održana u hotelu "Radon Plaza" u Sarajevu, nove kolekcije Ray Ban dioptrijskih i sunčanih naočala. Od ove sedmice se nalaze u ponudi u optici Lara po najpovoljnijim cijenama. <br> <br> <br>
-                       <a href="#" title="vise"> Detaljnije... </a> 
-                             </p>
-                    </div>
+                 
+                  <script>
+                      otvori('naslovna.html');
+                  </script>
 
                     </div>
 
-                <div id="lijevi_slike">
+          <!--      <div id="lijevi_slike">
                     <div id="slika1"></div>
                     <div id="slika2"></div>
-                </div>
+                </div>-->
 
                 <div id="copyright">
                 <p>© Larisa Bešić | 2015 | Sva prava pridržana</p>

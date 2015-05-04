@@ -55,7 +55,7 @@ function validacija() {
 	{
 		poruka.style.visibility = "hidden";
 		return true;
-	}
+	}   
 }
 
 function prikaziTekstIme() {
