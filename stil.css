@@ -25,6 +25,9 @@ body {
     width: 200px;
     margin-top: 25px;
 }
+.Novi{
+ background-color: red;
+}
 
 #desni {
     width: 745px;
@@ -33,6 +36,7 @@ body {
     border: 2px solid green;
     box-shadow: 0px 0px 10px green;
 }
+
 
 #lijevi ul li{
     background-color: #eeecec;
@@ -79,14 +83,27 @@ h3{
     padding-top: 40px;
 }
 
-#novost1 p{
-    width: 400px;
-    float: right;
-    text-align: justify;
-    padding-right: 45px;
-}
 
 .novost1_slika{
+   /* margin-left: 30px;
+    margin-bottom: 30px;
+    margin-top: -50px;
+    width: 250px;
+    height: 250px;*/
+    margin-bottom: 300px;
+}
+
+#slikeN{
+    margin-top: 200px;
+}
+
+#tekstN{
+    width: 300px;
+    float: right;
+    background-color: red;
+}
+
+#slika{
     margin-left: 30px;
     margin-bottom: 30px;
     margin-top: -50px;
@@ -100,7 +117,7 @@ h3{
      color: #808080;
 }
 
-#novost2 p{
+#novosti p{
     width: 400px;
     float: right;
     text-align: justify;

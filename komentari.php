@@ -26,16 +26,15 @@
                     <li><a onclick="otvori('proizvodi.html')">Proizvodi</a></li> 
                     <li><a onclick="otvori('kontakt.html')">Kontakt</a></li> 
                 </ul>
-
-               <?php
-                    include 'ValidacijaForme.php'
-                ?>
  
                 <div id="desni">
                  
-                  <?php
-                      include $kontaktForma;
-                  ?>
+             <!--     <script>
+                      otvori('naslovna.html');
+                  </script>-->
+                     <?php
+                    include 'komentariPrikaz.php'
+                    ?>
 
                     </div>
 

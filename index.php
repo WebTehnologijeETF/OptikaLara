@@ -20,7 +20,7 @@
             
             <div id="lijevi">
                 <ul>
-                    <li><a onclick="otvori('naslovna.html')">Novosti</a></li> 
+                    <li><a onclick="otvori('novosti.php')">Novosti</a></li> 
                     <li><a onclick="otvori('onama.html')">O nama</a></li>
                     <li><a onclick="otvori('cjenovnik.html')">Cjenovnik</a></li>
                     <li><a onclick="otvori('proizvodi.html')">Proizvodi</a></li> 
@@ -29,9 +29,12 @@
  
                 <div id="desni">
                  
-                  <script>
+             <!--     <script>
                       otvori('naslovna.html');
-                  </script>
+                  </script>-->
+                     <?php
+                    include 'novosti.php'
+                    ?>
 
                     </div>
 
