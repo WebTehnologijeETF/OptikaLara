@@ -48,7 +48,7 @@
              }
          }
         echo
-             "<form style=margin-left:50px action=upisKomentara.php method=post id=slike> <br>
+             "<form style=margin-left:50px action=htmlspecialchars(upisKomentara.php) method=post id=slike> <br>
              <p style=margin-left:20px> Popunite polja ispod da bi ostavili komentar na novost. Obavezno unesite polja za ime i poruku! </p> 
              <input type=hidden name=id value=$novost_id> <br>
              <label> Ime: </label>
