@@ -17,6 +17,10 @@
         <div id="gornji">    
             <p>OPTIKA <br> Lara</p>
         </div>
+            <div id="lijevi_slike">
+                    <div id="slika1"></div>
+                    <div id="slika2"></div>
+                </div>
             
             <div id="lijevi">
                 <ul>
@@ -26,7 +30,7 @@
                     <li><a onclick="otvori('proizvodi.html')">Proizvodi</a></li> 
                     <li><a onclick="otvori('kontakt.html')">Kontakt</a></li> 
                 </ul>
-
+                
                <?php
                     include 'ValidacijaForme.php'
                 ?>
@@ -38,11 +42,6 @@
                   ?>
 
                     </div>
-
-          <!--      <div id="lijevi_slike">
-                    <div id="slika1"></div>
-                    <div id="slika2"></div>
-                </div>-->
 
                 <div id="copyright">
                 <p>© Larisa Bešić | 2015 | Sva prava pridržana</p>

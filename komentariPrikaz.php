@@ -52,14 +52,13 @@
              <p style=margin-left:20px> Popunite polja ispod da bi ostavili komentar na novost. Obavezno unesite polja za ime i poruku! </p> 
              <input type=hidden name=id value=$novost_id> <br>
              <label> Ime: </label>
-             <input type=text name=ime> <br>
+             <input type=text name=ime class=kontakt1> <br><br>
              <label> E-mail: </label>
-             <input type=text name=mail> <br>
+             <input type=text name=mail class=kontakt1> <br><br>
 		     <label> Poruka: </label>
-		     <textarea placeholder=Ostavite poruku... style=margin-left:190px rows=10 cols=50 name=poruka>  </textarea> <br> <br>
-		     <input class=Button value=Komentariši type=submit style=margin-left:520px name=ok> <br><br><br>
+		     <textarea placeholder=Ostavite poruku... style=margin-left:190px rows=10 cols=50 name=poruka id=poruka1>  </textarea> <br> <br>
+		     <input class=Button value=Komentariši type=submit name=ok id=potvrdi1> <br><br><br>
 		     </form>";
-             
      }
                   
     ?>

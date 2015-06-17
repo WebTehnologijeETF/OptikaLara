@@ -31,8 +31,7 @@
          "<p class=datum1>" .$novost['autor']. ",&nbsp;&nbsp;" .date("d.m.Y. (h:i)", $novost['vrijeme']). "</p>",
          "<img src=".$novost['slika']." alt=novost1_slika height=250 width=250 style=margin-left:30px>",
          "<p> <br>" .$novost['tekst']. "<br> <br> <br>", 
-         "<a href=# title=vise> Detaljnije... </a>",
-		 "<a href=komentari.php?novost_id=".$novost['id']." title=komentari style=margin-left:210px> Komentari(".$br.")</a>", 
+		 "<a href=komentari.php?novost_id=".$novost['id']." title=komentari style=margin-left:300px class=link>Komentari(".$br.")</a>", 
          "</p>",
          "</div><br><br>";
      }

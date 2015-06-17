@@ -1,11 +1,11 @@
 <?php
-    $ime = $_GET['ime'];
-    $datum = $_GET['datum'];
-    $email = $_GET['mail'];
-    $razlog = $_GET['razlog'];
-    $artikal = $_GET['artikal'];
-    $naslov = $_GET['naslov'];
-    $poruka = $_GET['poruka'];
+    $ime = xss($_GET['ime']);
+    $datum = xss($_GET['datum']);
+    $email = xss($_GET['mail']);
+    $razlog = xss($_GET['razlog']);
+    $artikal = xss($_GET['artikal']);
+    $naslov = xss($_GET['naslov']);
+    $poruka = xss($_GET['poruka']);
 ?>
 
 <!DOCTYPE html>

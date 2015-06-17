@@ -6,22 +6,26 @@
     $emailOK = 0;
     $imeOK = 0;
     $porukaOK = 0;
-    if (isset($_POST['ime']) && preg_replace('/\s+/','', $_POST['ime']) != '')
+    $ime = xss($_POST['ime']);
+    $porukica = xss($_POST['poruka']);
+    $mail = xss($_POST['mail']);
+
+    if (isset($ime) && preg_replace('/\s+/','', $ime) != '')
         $imeOK = 1;
-    if (isset($_POST['poruka']) && preg_replace('/\s+/','', $_POST['poruka']) != '')
+    if (isset($porukica) && preg_replace('/\s+/','', $porukica) != '')
         $porukaOK = 1;
-    if (preg_match($emailReg, $_POST['mail']) && isset($_POST['mail']) && preg_replace('/\s+/','', $_POST['mail']) != '')
+    if (preg_match($emailReg, $mail) && isset($mail) && preg_replace('/\s+/','', $mail) != '')
         $emailOK = 1;
-    if (empty($_POST['mail']))
+    if (empty($mail))
         $emailOK = 1;
     if ($imeOK == 1 && $emailOK == 1 && $porukaOK == 1)
     {
         $upis = $veza->prepare("INSERT INTO komentar (id, datumivrijeme, autor, email, tekst, novost) VALUES ('NULL', NOW(), :ime, :mail, :poruka, :id)");
-        $upis->bindParam(':ime', $_POST['ime'], PDO::PARAM_STR, 100);
-	    $upis->bindParam(':mail', $_POST['mail'], PDO::PARAM_STR, 100);
-	    $upis->bindParam(':poruka', $_POST['poruka'], PDO::PARAM_STR, 100);
+        $upis->bindParam(':ime', $ime, PDO::PARAM_STR, 100);
+	    $upis->bindParam(':mail', $mail, PDO::PARAM_STR, 100);
+	    $upis->bindParam(':poruka', $porukica, PDO::PARAM_STR, 100);
         $upis->bindParam(':id', $_POST['id'], PDO::PARAM_STR, 100);
-        $id=$_POST['id'];
+        $id=xss($_POST['id']);
         if($upis->execute()) 
         {
             $poruka = "Ostavili ste komentar na željenu novost!";
@@ -40,6 +44,13 @@
         include 'index.php';
     }
     
+    function xss ($podatak)
+    {
+        $podatak=trim($podatak);
+        $podatak=stripcslashes($podatak);
+        $podatak=htmlspecialchars($podatak);
+        return $podatak;
+    }
 
 ?>
 

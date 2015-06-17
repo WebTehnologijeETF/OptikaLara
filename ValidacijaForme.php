@@ -1,5 +1,5 @@
 <?php
-    
+
     $kontaktForma='';
     $imeOK = 0;
     $naslovOK = 0;
@@ -8,20 +8,25 @@
     $razlogOK = 0;
     $artikalOK = 0;
     $porukaOK = 0;
+    $ime = xss($_GET['ime']);
+    $email = xss($_GET['mail']);
+    $artikal = xss($_GET['artikal']);
+    $naslov = xss($_GET['naslov']);
+    $poruka = xss($_GET['poruka']);
 
-    if (isset($_GET['ime']) && preg_replace('/\s+/','', $_GET['ime']) != '')
+    if (isset($ime) && preg_replace('/\s+/','', $ime) != '')
     {
         $imeOK = 1;
     }
 
-    if (preg_match($emailReg, $_GET['mail']) && isset($_GET['mail']) && preg_replace('/\s+/','', $_GET['mail']) != '')
+    if (preg_match($emailReg, $email) && isset($email) && preg_replace('/\s+/','', $email) != '')
     {
         $emailOK = 1;
     }
 
     if ($_GET['razlog'] == 'reklamacija')
     {
-        if (isset($_GET['artikal']) && preg_replace('/\s+/','', $_GET['artikal']) != '')
+        if (isset($artikal) && preg_replace('/\s+/','', $artikal) != '')
         {
             $artikalOK = 1;
         }
@@ -33,7 +38,7 @@
 
     if ($_GET['razlog'] == 'pohvala')
     {
-        if (isset($_GET['artikal']) && preg_replace('/\s+/','', $_GET['artikal']) != '')
+        if (isset($artikal) && preg_replace('/\s+/','', $artikal) != '')
         {
             $artikalOK = 1;
         }
@@ -45,7 +50,7 @@
 
     if ($_GET['razlog'] == 'kritika')
     {
-        if (isset($_GET['artikal']) && preg_replace('/\s+/','', $_GET['artikal']) != '')
+        if (isset($artikal) && preg_replace('/\s+/','', $artikal) != '')
         {
             $artikalOK = 1;
         }
@@ -57,7 +62,7 @@
 
     if ($_GET['razlog'] == 'drugo')
     {
-        if (isset($_GET['artikal']) && preg_replace('/\s+/','', $_GET['artikal']) != '')
+        if (isset($artikal) && preg_replace('/\s+/','', $artikal) != '')
         {
             $artikalOK = 1;
         }
@@ -67,12 +72,12 @@
         }
     }
 
-    if (isset($_GET['naslov']) && preg_replace('/\s+/','', $_GET['naslov']) != '')
+    if (isset($naslov) && preg_replace('/\s+/','', $naslov) != '')
     {
         $naslovOK = 1;
     }
 
-    if (isset($_GET['poruka']) && preg_replace('/\s+/','', $_GET['poruka']) != '')
+    if (isset($poruka) && preg_replace('/\s+/','', $poruka) != '')
     {
         $porukaOK = 1;
     }
@@ -91,5 +96,13 @@
     else
     {
         $kontaktForma = 'FormaNOK.php';
+    }
+
+    function xss ($podatak)
+    {
+        $podatak=trim($podatak);
+        $podatak=stripcslashes($podatak);
+        $podatak=htmlspecialchars($podatak);
+        return $podatak;
     }
 ?>
