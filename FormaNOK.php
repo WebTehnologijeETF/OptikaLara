@@ -101,7 +101,7 @@
                         ?> 
                         </div> <br><br>
                     <input type="submit" name="OK" value="Potvrdi" id="potvrdi">
-                    <input type="button" name="NOK" value="Poništi" id="ponisti"><br><br><br><br><br><br>
+                    <input type="reset" name="NOK" value="Poništi" id="ponisti"><br><br><br><br><br><br>
                     <p id="tekstic">Sva polja označena sa * su obavezna za unos.<br><br><br></p>
                         </form>
     </body>
