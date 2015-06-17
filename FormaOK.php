@@ -94,7 +94,7 @@
                     </textarea>
                     <br><br>
                     <input type="submit" name="OK" value="Potvrdi" id="potvrdi">
-                    <input type="button" name="NOK" value="Poništi" id="ponisti">
+                    <input type="reset" name="NOK" value="Poništi" id="ponisti">
             <br><br><br>
             </form>
     </body>
